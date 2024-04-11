@@ -26,8 +26,8 @@ if not Path.cwd().parts[-1] == 'boulton':
     except:
       password = getpass('Password: ')
       password = urllib.parse.quote(password) 
-    !git clone https://'{password}:{password}'@github.com/profLewis/boulton.git
+    os.system(f"git clone https://{password}:{password}@github.com/profLewis/boulton.git")
   
   os.chdir('boulton')  
-  !pwd
+  os.system("pwd")
 
