@@ -5,6 +5,7 @@ import urllib
 from pathlib import Path
 import shutil
 
+refresh = True
 
 here = Path.cwd().parts
 print(f'Currently in directory {Path.cwd()}')
