@@ -15,7 +15,13 @@ if condition:
     os.chdir('..')
     print(Path.cwd())
     shutil.rmtree('boulton')
-else:
+else refresh here[-2] == 'content':
+    try:
+      print(Path.cwd())
+      shutil.rmtree('boulton')
+    except:
+      pass
+
   print(condition,'regeneration switch:',refresh,'in',here[-1],here[-2])
 # test if in correct directory
 if not Path.cwd().parts[-1] == 'boulton':
