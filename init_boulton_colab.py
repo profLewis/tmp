@@ -1,6 +1,14 @@
 # for colab
 import os
 from pathlib import Path
+import sys
+
+try:
+  refresh = sys.argv[1]
+except:
+  pass
+
+print(f"refresh set {refresh}");
 
 try:
   # ie this is colab
@@ -13,8 +21,6 @@ try:
       shutil.rmtree('boulton')
     except:
       pass
-  else:
-    print(f"refresh set {refresh}");
 
   from pathlib import Path
   if not Path('boulton').exists():
