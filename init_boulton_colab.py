@@ -15,10 +15,11 @@ try:
   os.chdir('/content')
   print("I think this is colab ...")
   if refresh:
-    print(f"refresh set {refresh} so cleaning up ...")
+    print(f"refresh set {refresh} so cleaning up ... ",end="")
     try:
       import shutil
       shutil.rmtree('boulton')
+      print("done")
     except:
       pass
 
@@ -34,7 +35,7 @@ try:
       import urllib
       password = getpass('Token: ')
       password = urllib.parse.quote(password)
-    print(f"cloning github.com/profLewis/boulton.git")
+    print(f"cloning github.com/profLewis/boulton.git ",end="")
     os.system(f"git clone https://{password}:{password}@github.com/profLewis/boulton.git")
     print(f"done")
 
