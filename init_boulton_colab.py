@@ -6,6 +6,7 @@ import sys
 try:
   refresh = sys.argv[1]
 except:
+  refresh = False
   pass
 
 print(f"refresh set {refresh}");
