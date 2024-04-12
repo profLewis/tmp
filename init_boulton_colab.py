@@ -15,6 +15,7 @@ try:
   # ie this is colab
   os.chdir('/content')
   print("I think this is colab ...")
+  from google.colab import drive
   if refresh:
     print(f"refresh set {refresh} so cleaning up ... ",end="")
     try:
