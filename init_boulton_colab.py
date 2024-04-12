@@ -38,5 +38,6 @@ try:
     os.system(f"git clone https://{password}:{password}@github.com/profLewis/boulton.git")
     print(f"done")
 except:
+  print("I think this is a local install ...")
   pass
 
