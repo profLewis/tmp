@@ -32,9 +32,11 @@ try:
     except:
       from getpass import getpass
       import urllib
-      password = getpass('Password: ')
+      password = getpass('Token: ')
       password = urllib.parse.quote(password)
+    print(f"cloning github.com/profLewis/boulton.git")
     os.system(f"git clone https://{password}:{password}@github.com/profLewis/boulton.git")
+    print(f"done")
 except:
   pass
 
