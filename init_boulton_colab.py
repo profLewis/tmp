@@ -37,6 +37,8 @@ try:
     print(f"cloning github.com/profLewis/boulton.git")
     os.system(f"git clone https://{password}:{password}@github.com/profLewis/boulton.git")
     print(f"done")
+
+  os.chdir('/content/boulton')
 except:
   print("I think this is a local install ...")
   pass
