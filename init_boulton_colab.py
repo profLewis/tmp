@@ -43,6 +43,6 @@ try:
 
   os.chdir('/content/boulton')
 except:
-  print("I think this is a local install ...")
+  print("Either this is a local install or you entered an incorrect token ... please check.")
   pass
 
